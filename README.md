@@ -8,6 +8,7 @@
 The stack used here is close to what we use for Infrastructure As Code. Mainly:
 
 - [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli).
+- Install [Node.JS](https://nodejs.org/en/download)
 - [CDK for Terraform](https://developer.hashicorp.com/terraform/tutorials/cdktf/cdktf-install).
 - Typescript as the IaC language of choice.
 - A [monorepo](https://monorepo.tools/) managed with [pnpm](https://pnpm.io/).
