@@ -16,7 +16,7 @@ The stack used here is close to what we use for Infrastructure As Code. Mainly:
 ## Process:
 - Once you have the above-mentioned tools installed you can run `pnpm install` to install the npm/Typescript dependencies.
 - Navigate to Dir **hashicorpdemoapp setup** and Run **docker-compose up -d** to create the **Hashicups APIs** services.
-- Check If API and DB services are up, using **docker ps** or **docker-compose ps**, In case of error check logs: **docker logs <containerID>** or **docker-compose logs**.
+- Check If API and DB services are up, using **docker ps** or **docker-compose ps**, In case of error check logs: **docker logs <containerID>** or **docker-compose logs**. Also Check if API is returning the expected results by running this command: **curl -v localhost:19090/coffees**
 - Once all services are up, we are ready to Run Unit Tests, Navigate to __test__ and run this command to start Tests: **pnpm run test**
 - Naivgate to Dir **packages/iac/** and run this command to Deploy Stack use Command: **cdktf deploy**
 
