@@ -1,0 +1,13 @@
+{
+  "version": "0.15.5",
+  "stacks": {
+    "hashicups-terraform": {
+      "name": "hashicups-terraform",
+      "constructPath": "hashicups-terraform",
+      "workingDirectory": "stacks\\hashicups-terraform",
+      "synthesizedStackPath": "stacks\\hashicups-terraform\\cdk.tf.json",
+      "annotations": [],
+      "dependencies": []
+    }
+  }
+}

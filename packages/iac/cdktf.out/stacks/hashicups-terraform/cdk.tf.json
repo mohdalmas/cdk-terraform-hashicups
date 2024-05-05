@@ -1,0 +1,142 @@
+{
+  "//": {
+    "metadata": {
+      "backend": "local",
+      "stackName": "hashicups-terraform",
+      "version": "0.15.5"
+    },
+    "outputs": {
+      "hashicups-terraform": {
+        "tf-output": "hashicupsterraform_tfoutput_A5F41311"
+      }
+    }
+  },
+  "data": {
+    "hashicups_coffees": {
+      "hashicupsterraform_Connectaccino_F51F764A": {
+        "//": {
+          "metadata": {
+            "path": "hashicups-terraform/Connectaccino",
+            "uniqueId": "hashicupsterraform_Connectaccino_F51F764A"
+          }
+        }
+      },
+      "hashicupsterraform_Vaulatte_E4ABEE1A": {
+        "//": {
+          "metadata": {
+            "path": "hashicups-terraform/Vaulatte",
+            "uniqueId": "hashicupsterraform_Vaulatte_E4ABEE1A"
+          }
+        }
+      },
+      "hashicupsterraform_Waypointiato_131EB143": {
+        "//": {
+          "metadata": {
+            "path": "hashicups-terraform/Waypointiato",
+            "uniqueId": "hashicupsterraform_Waypointiato_131EB143"
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "hashicupsterraform_tfoutput_A5F41311": {
+      "value": [
+        {
+          "items": [
+            {
+              "coffee": {
+                "id": "${data.hashicups_coffees.hashicupsterraform_Connectaccino_F51F764A.id}"
+              },
+              "quantity": 3
+            },
+            {
+              "coffee": {
+                "id": "${data.hashicups_coffees.hashicupsterraform_Vaulatte_E4ABEE1A.id}"
+              },
+              "quantity": 2
+            }
+          ],
+          "orderId": "order1"
+        },
+        {
+          "items": [
+            {
+              "coffee": {
+                "id": "${data.hashicups_coffees.hashicupsterraform_Waypointiato_131EB143.id}"
+              },
+              "quantity": 4
+            }
+          ],
+          "orderId": "order2"
+        }
+      ]
+    }
+  },
+  "provider": {
+    "hashicups": [
+      {
+        "host": "localhost:19090",
+        "password": "admin",
+        "username": "admin"
+      }
+    ]
+  },
+  "resource": {
+    "hashicups_order": {
+      "hashicupsterraform_order1_ADC9AD0C": {
+        "//": {
+          "metadata": {
+            "path": "hashicups-terraform/order1",
+            "uniqueId": "hashicupsterraform_order1_ADC9AD0C"
+          }
+        },
+        "id": "order1",
+        "items": [
+          {
+            "coffee": {
+              "id": "${data.hashicups_coffees.hashicupsterraform_Connectaccino_F51F764A.id}"
+            },
+            "quantity": 3
+          },
+          {
+            "coffee": {
+              "id": "${data.hashicups_coffees.hashicupsterraform_Vaulatte_E4ABEE1A.id}"
+            },
+            "quantity": 2
+          }
+        ]
+      },
+      "hashicupsterraform_order2_067CECCB": {
+        "//": {
+          "metadata": {
+            "path": "hashicups-terraform/order2",
+            "uniqueId": "hashicupsterraform_order2_067CECCB"
+          }
+        },
+        "id": "order2",
+        "items": [
+          {
+            "coffee": {
+              "id": "${data.hashicups_coffees.hashicupsterraform_Waypointiato_131EB143.id}"
+            },
+            "quantity": 4
+          }
+        ]
+      }
+    }
+  },
+  "terraform": {
+    "backend": {
+      "local": {
+        "path": "C:\\Users\\mohda\\terraform\\terraform-hashicups\\packages\\iac\\terraform.hashicups-terraform.tfstate"
+      }
+    },
+    "required_providers": {
+      "hashicups": {
+        "source": "hashicorp/hashicups",
+        "version": "0.3.1"
+      }
+    }
+  }
+}
