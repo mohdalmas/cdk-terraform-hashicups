@@ -11,7 +11,6 @@ The stack used here is close to what we use for Infrastructure As Code. Mainly:
 - Install [Node.JS](https://nodejs.org/en/download)
 - [CDK for Terraform](https://developer.hashicorp.com/terraform/tutorials/cdktf/cdktf-install).
 - Typescript as the IaC language of choice.
-- A [monorepo](https://monorepo.tools/) managed with [pnpm](https://pnpm.io/).
 - Install Docker: [For Windows](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=module&_gl=1*19e07f8*_ga*MjE0MzkxMDk3My4xNjg3NTQ0Mzc0*_ga_XJWPQMJYHQ*MTcxNDkwMTcwOS4xNy4xLjE3MTQ5MDE3MTEuNTguMC4w) [For Linux](https://docs.docker.com/desktop/linux/install/?_gl=1*10wqm7z*_ga*MjE0MzkxMDk3My4xNjg3NTQ0Mzc0*_ga_XJWPQMJYHQ*MTcxNDkwMTcwOS4xNy4xLjE3MTQ5MDE3NzEuNjAuMC4w).
 
 ## Process:
