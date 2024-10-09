@@ -1,4 +1,4 @@
-# Yassir Platform Engineering Take Home Challenge || Submission By Mohd Almas || Email: mohdalmas0@gmail.com 
+# By Mohd Almas || Email: mohdalmas0@gmail.com 
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/mohdalmas/terraform-hashicups)
 
